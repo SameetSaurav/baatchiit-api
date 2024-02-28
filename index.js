@@ -113,7 +113,7 @@ app.post('/logout', (req,res) => {
 })
 
 
-const server = app.listen(4040)
+const server = app.listen("https://baatchiit-api.onrender.com")
 const wss = new WebSocketServer({server})
 wss.on('connection', (connection, req)=>{
     console.log("connected")
